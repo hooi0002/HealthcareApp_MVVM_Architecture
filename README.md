@@ -1,3 +1,3 @@
 # HealthcareApp_MVVM_Architecture
 Healthcare App with Android MVVM-Architecture
-![Image description](Screenshot 2020-05-07 at 8.08.32 PM.png)
+![Image description](https://github.com/hooi0002/HealthcareApp_MVVM_Architecture/blob/master/Screenshot%202020-05-07%20at%208.08.32%20PM.png)
