@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="25dp"
+    android:layout_marginTop="50dp">
+
+    <EditText
+        android:id="@+id/edit_name"
+        android:hint="Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/edit_gender"
+        android:hint="Gender (MALE, FEMALE, OTHER, UNKNOWN)"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_name"
+        android:layout_alignParentStart="true"/>
+
+    <com.santalu.maskedittext.MaskEditText
+        android:id="@+id/edit_appointmentdate"
+        android:hint="Appointment Date (example: yyyy-MM-dd)"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_gender"
+        android:layout_alignParentStart="true"
+        app:met_mask="####-##-##" />
+
+    <com.santalu.maskedittext.MaskEditText
+        android:id="@+id/edit_birthdate"
+        android:hint="Birth Date (example: yyyy-MM-dd)"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_appointmentdate"
+        android:layout_alignParentStart="true"
+        app:met_mask="####-##-##" />
+
+    <TextView
+        android:id="@+id/text_view_errorPrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_birthdate"
+        android:layout_marginTop="100dp"
+        android:text="All fields are mandatory."
+        android:textColor="@android:color/black" />
+
+</RelativeLayout>
